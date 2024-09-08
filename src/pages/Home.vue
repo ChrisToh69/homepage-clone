@@ -1,5 +1,7 @@
 <script setup>
 import { ref } from 'vue'
+import Footer from '../components/layout/footer.vue';
+import Banner1 from '../components/banner1.vue';
 
 defineProps({
   msg: String,
@@ -9,13 +11,8 @@ const count = ref(0)
 </script>
 
 <template>
-    
-  <h1>{{ msg }}</h1>
-
-  <div class="card">
-    <button type="button" @click="count++">count is {{ count }}</button>
-  </div>
-
+  <Banner1></Banner1>
+  <Footer></Footer>
 </template>
 
 <style scoped>

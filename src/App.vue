@@ -1,10 +1,41 @@
-<script setup>
-import Home from './pages/Home.vue'
-</script>
-
 <template>
-  <Home msg="Vite" />
+  <div>
+    <Header />
+    <banner1 />
+    <banner2 />
+    <section1 />
+    <!-- <simplebutton :btn-text="btnText"/> -->
+    <Footer />
+  </div>
 </template>
+
+<script>
+import './index.css';
+import Header from './components/layout/header.vue';
+import Footer from './components/layout/footer.vue';
+import banner1 from './components/banner1.vue';
+import banner2 from './components/banner2.vue';
+import section1 from './components/section/section1.vue';
+import simplebutton from './components/ui/simple-button.vue';
+
+
+export default{
+  components: {
+    Header,
+    Footer,
+    banner1,
+    banner2,
+    section1,
+    simplebutton,
+  },
+  data(){
+    return{
+      btnText:"asdf",
+    }
+  }
+};
+
+</script>
 
 <style scoped>
 .logo {
