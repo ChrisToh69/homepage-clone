@@ -5,6 +5,7 @@
                         关于<br><span class="font-bold">新协益</span>
                     </h1>
                     <p class="mt-2">新协益贸易(马)有限公司成立于1977年12月6日,是一家以神料为主,并且综合研发,生产及销售为一体的专业神料零售兼批发商。</p>
+                    <SimpleButton :btn-text="btnText" class=""/>
                     <div class="grid grid-cols-2 gap-4 mt-8 ">
                         <div class="flex flex-row gap-5 items-center">
                             <img src="/icons/about-icon-1.png" alt="Education" class="h-10 w-10"/>
@@ -50,8 +51,17 @@
 </template>
 
 <script>
-export default {
+import SimpleButton from './ui/simple-button.vue';
 
+export default {
+    components:{
+        SimpleButton
+    },
+    data(){
+    return{
+      btnText:"理解更多",
+    }
+  }
 }
 </script>
 

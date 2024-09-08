@@ -4,7 +4,7 @@
     <banner1 />
     <banner2 />
     <section1 />
-    <!-- <simplebutton :btn-text="btnText"/> -->
+    <simplebutton :btn-text="btnText" class="flex justify-center"/>
     <Footer />
   </div>
 </template>
@@ -30,7 +30,7 @@ export default{
   },
   data(){
     return{
-      btnText:"asdf",
+      btnText:"理解更多",
     }
   }
 };
