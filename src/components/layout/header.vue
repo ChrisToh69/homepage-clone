@@ -13,7 +13,7 @@
                 md:w-1/5 md:px-1 md:flex md:items-center md:justify-center"
                 x-transition:enter="transition ease-out duration-300">
                     <div class="logo">
-                        <img src="C:\Users\User\OneDrive - Universiti Tunku Abdul Rahman\Desktop\HomePage\Images\logo.png" alt="Logo">
+                        <img src="/logo.png" alt="Logo">
                     </div>
                 </div>
 
